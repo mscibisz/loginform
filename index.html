@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Form">
+		<meta name="keywords" content="Form">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+	</head>
+	<body>
+<!-- Form starting here -->
+		<div id="form">
+			<div id="upperbox">
+				<form>
+<!-- Text forms here -->
+					<div class="form_boxes">
+						<label class="label_form">Name
+							<input required oninvalid="this.setCustomValidity('You need to fill in this field if you wish to continue')"  onchange="this.setCustomValidity('')" type="text" class="input_form" name="firstname">
+						</label>
+					</div>
+					<div class="form_boxes">
+						<label class="label_form">Surname
+							<input required oninvalid="this.setCustomValidity('You need to fill in this field if you wish to continue')"  onchange="this.setCustomValidity('')" type="text" class="input_form" name="lastname">
+						</label>
+					</div>
+			</div>
+<!-- Checkbox -->
+				<div class="form_boxes">
+					<input required oninvalid="this.setCustomValidity('You need to check this field if you wish to continue')"  onchange="this.setCustomValidity('')" type="checkbox" name="terms" value="agree">
+						<label id="label_checkbox">I do agree to...
+						</label>
+				</div>
+<!-- Submit button here -->
+			<input id="button_form" type="submit" value="Submit"></button>
+				</form>
+		</div>
+
+		
+	</body>
+</html>
